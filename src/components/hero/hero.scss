@@ -1,0 +1,24 @@
+.flower-wrap {
+  position: absolute;
+  max-width: 720px;
+  min-width: 680px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  img, picture {
+    opacity: .62;
+  }
+}
+
+.kk-wrap {
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50vh;
+}
