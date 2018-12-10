@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Footer from './footer/footer';
+import Rsvp from './rsvp/rsvp';
 
 import './layout.scss';
 import 'bootstrap/scss/bootstrap-grid.scss';
@@ -31,7 +32,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        
+        <Rsvp />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}
         <Footer />
