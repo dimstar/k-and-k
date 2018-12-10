@@ -4,10 +4,11 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-// import './layout.css'
+import './layout.scss'
 import 'bootstrap/scss/bootstrap-grid.scss';
 import 'bootstrap/scss/bootstrap-reboot.scss';
-import Background from './hero/hero';
+
+import Rsvp from './rsvp/rsvp';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,12 +26,13 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
+            { name: 'description', content: 'Welcome to Kate & Kyle Magee\'s Wedding Website!' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
           <html lang="en" />
         </Helmet>
+        <Rsvp /> 
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}
       </>

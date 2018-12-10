@@ -1,0 +1,25 @@
+@import url("https://use.typekit.net/xcv5tba.css");
+
+* {
+  font-family: montserrat, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: baskerville-display-pt, serif;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin-top: 0;
+}
+
+.fluid-container {
+  overflow: hidden;
+}
+
+.header-img {
+  margin-bottom: 2em;
+  display: block;
+}
+
+.content-wrap {
+  padding: 2em;
+}

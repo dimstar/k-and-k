@@ -1,0 +1,40 @@
+$background: #707070;
+
+.rsvp-holder {
+    position: fixed;
+    z-index: 100;
+    bottom: 100%;
+    overflow: visible;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s;
+    background: white;
+}
+
+
+.rsvp-btn {
+    color: white;
+    background: $background;
+    border: 0;
+    padding: 12px 36px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: transform 500ms;
+    transition-delay: 1s;
+    border: $background 1px solid;
+}
+
+.rsvp-btn:focus, .rsvp-btn:active {
+    outline: 0;
+    border: white 1px solid;
+}
+
+.down {
+    bottom: 0;
+    overflow: scroll;
+    .rsvp-btn {
+        transform: translateY(-100%);
+    }
+}

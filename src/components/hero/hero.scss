@@ -21,4 +21,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50vh;
+
+  .sub-head {
+    margin-top: 2em;
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    padding: 0 24px;
+    text-align: center;
+    font-weight: 200;
+  }
 }
