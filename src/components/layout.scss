@@ -4,11 +4,26 @@
   font-family: montserrat, sans-serif;
 }
 
+input[type=reset], input[type=submit], button, html [type=button] {
+  border-radius: 0 !important;
+  -webkit-appearance: none !important;
+}
+
 h1, h2, h3 {
   font-family: baskerville-display-pt, serif;
   letter-spacing: 1px;
   line-height: 1em;
   margin-top: 0;
+}
+
+.img-aligner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+  height: 100%;
 }
 
 .fluid-container {
@@ -18,8 +33,13 @@ h1, h2, h3 {
 .header-img {
   margin-bottom: 2em;
   display: block;
+  max-height: 33vh;
+  overflow: hidden;
 }
 
 .content-wrap {
   padding: 2em;
+  max-width: 768px;
+  margin-left:auto;
+  margin-right:auto;
 }

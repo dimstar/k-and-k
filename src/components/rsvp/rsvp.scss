@@ -6,9 +6,25 @@ $background: #707070;
     bottom: 100%;
     overflow: visible;
     width: 100%;
-    height: 100vh;
+    min-height: 89vh;
+    height: 100%;
     transition: all 1s;
     background: white;
+    .cognito {
+        opacity: 0;
+        visibility: hidden;
+        transition: 500ms;
+        padding: 56px 16px;
+        #c-submit-button {
+            font-size: 24px !important;
+            letter-spacing: 1px;
+            margin-bottom: 32px;
+        }
+        .c-forms-form .c-add-item {
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+      }
 }
 
 
@@ -18,12 +34,13 @@ $background: #707070;
     border: 0;
     padding: 12px 36px;
     font-size: 1.2em;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     right: 0;
     transition: transform 500ms;
     transition-delay: 1s;
     border: $background 1px solid;
+    z-index: 200;
 }
 
 .rsvp-btn:focus, .rsvp-btn:active {
@@ -34,7 +51,32 @@ $background: #707070;
 .down {
     bottom: 0;
     overflow: scroll;
-    .rsvp-btn {
-        transform: translateY(-100%);
+
+    .cognito {
+      opacity: 1;
+      visibility: visible;  
     }
+    // .rsvp-btn {
+    //     transform: translateY(-100%);
+    // }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea,
+select {
+  font-size: 16px !important;
 }
