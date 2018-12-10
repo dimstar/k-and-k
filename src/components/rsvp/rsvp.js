@@ -11,7 +11,6 @@ class Rsvp extends React.Component {
         this.state = { 
             offCanvas: 'up', 
             rsvpButtonVal: 'RSVP',
-            fireCognito: this.props.fireCognito,
         };
         this.openRsvp = this.openRsvp.bind(this);
     }
@@ -30,7 +29,7 @@ class Rsvp extends React.Component {
     render() {
         return (<div style={{position: 'relative', overflow: 'visible'}}>
             <div className={"rsvp-holder " + this.state.offCanvas}>
-                <CognitoForm fireCognito={this.state.fireCognito} />
+                <CognitoForm />
             </div>
             <input className="rsvp-btn" type="button" value={this.state.rsvpButtonVal} onClick={this.openRsvp} />
         </div>)

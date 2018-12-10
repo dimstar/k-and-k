@@ -10,18 +10,8 @@ import Hero from '../components/hero/hero';
 import bg_brown from '../images/bg-brown.jpg';
 
 class IndexPage extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      fireCognito: true,
-    }
-  }
 
   componentDidMount(){
-    console.log('page state: ', this.props.location.state);
-    this.setState({
-      fireCognito: (!this.props.location.state.fireCognito) ? false : true,
-    })
   }
 
   BrittScrippsImg = () => {
@@ -45,7 +35,6 @@ class IndexPage extends React.Component {
 
   render(){
     return (<Layout>
-      <Rsvp fireCognito={this.state.fireCognito} />
       <div className="container-fluid" style={{
           background: `url( ${bg_brown} )`,
           position: 'relative',
@@ -82,7 +71,6 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <Link to="/page-2/" state={{fireCognito: false}}>Go to page 2</Link>
       </div>
     </Layout>)
   }

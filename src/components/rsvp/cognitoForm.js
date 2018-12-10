@@ -4,16 +4,10 @@ import React from 'react';
 class CognitoForm extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-            fireCognito: (this.props.fireCognito) ? true : false,
-        }
     }
 
     componentDidMount() {
-        console.log( 'final spawn: ',this.props.fireCognito);
-        if(this.state.fireCognito === true ){
-            Cognito.load("forms", { id: "1" }); // eslint-disable-line
-        }
+        Cognito.load("forms", { id: "1" }); // eslint-disable-line
     }
     
     render() {
