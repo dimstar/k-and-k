@@ -1,13 +1,22 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "jsonName": "dev-404-page-5f9",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/kylemagee/Documents/webapps/kyleandkate.love/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/kylemagee/Documents/webapps/kyleandkate.love/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "1b0508bba6ffe83a1a2dea0a0b371425",
+        "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
     },
@@ -970,14 +979,16 @@
       "siteMetadata": {
         "title": "Kyle&Kate.Love"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-10T09:23:14.150Z",
+      "buildTime": "2018-12-10T09:45:55.050Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "4aa5c21c45f0558821243a0912bc3071",
+        "contentDigest": "8532fe9c06e354fc7c51e4cf7867c086",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -987,7 +998,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "bc85b6e92773b8cbff71ae016cd909f9",
+        "contentDigest": "6d065caa405a02a38c49fdde8052d314",
         "type": "Directory",
         "description": "Directory \"src/images\"",
         "owner": "gatsby-source-filesystem"
@@ -999,7 +1010,7 @@
       "size": 320,
       "prettySize": "320 B",
       "modifiedTime": "2018-12-10T09:01:08.977Z",
-      "accessTime": "2018-12-10T09:23:16.793Z",
+      "accessTime": "2018-12-10T09:45:57.685Z",
       "changeTime": "2018-12-10T09:01:08.977Z",
       "birthTime": "2018-11-14T06:57:57.676Z",
       "root": "/",
@@ -1017,11 +1028,11 @@
       "blksize": 4194304,
       "ino": 8619731043,
       "blocks": 0,
-      "atimeMs": 1544433796792.8704,
+      "atimeMs": 1544435157684.6377,
       "mtimeMs": 1544432468976.7476,
       "ctimeMs": 1544432468976.7476,
       "birthtimeMs": 1542178677675.585,
-      "atime": "2018-12-10T09:23:16.793Z",
+      "atime": "2018-12-10T09:45:57.685Z",
       "mtime": "2018-12-10T09:01:08.977Z",
       "ctime": "2018-12-10T09:01:08.977Z",
       "birthtime": "2018-11-14T06:57:57.676Z"
@@ -1577,7 +1588,9 @@
       ],
       "2eaf5032-391d-57c4-a88c-3602295da9fa": [
         "sq--src-pages-index-js"
-      ]
+      ],
+      "b00a7980-0061-5346-8ee5-b4d263364c04": [],
+      "e5ce7965-1f80-5a04-acf1-cb51bef96b14": []
     },
     "connections": {}
   },
@@ -1591,7 +1604,7 @@
     "sq--src-components-image-js": 2011440971,
     "sq--src-components-background-js": 744137331,
     "sq--src-components-hero-hero-js": 744137331,
-    "sq--src-pages-index-js": 1809131838
+    "sq--src-pages-index-js": 1115783448
   },
   "components": {
     "/Users/kylemagee/Documents/webapps/kyleandkate.love/src/pages/404.js": {
@@ -1605,6 +1618,10 @@
     "/Users/kylemagee/Documents/webapps/kyleandkate.love/src/pages/page-2.js": {
       "query": "",
       "componentPath": "/Users/kylemagee/Documents/webapps/kyleandkate.love/src/pages/page-2.js"
+    },
+    "/Users/kylemagee/Documents/webapps/kyleandkate.love/.cache/dev-404-page.js": {
+      "query": "",
+      "componentPath": "/Users/kylemagee/Documents/webapps/kyleandkate.love/.cache/dev-404-page.js"
     }
   },
   "staticQueryComponents": {

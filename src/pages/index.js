@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import HeaderImg from 'gatsby-image';
+import IndexImg from 'gatsby-image';
 
 import Layout from '../components/layout';
 import Hero from '../components/hero/hero';
@@ -20,7 +20,24 @@ const BrittScrippsImg = () => (
         }
       }
     `}
-    render={data => <HeaderImg fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <IndexImg fluid={data.placeholderImage.childImageSharp.fluid} />}
+  />
+)
+
+const KksImg = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "kate-and-kyle.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <IndexImg fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 
@@ -62,7 +79,9 @@ const IndexPage = () => (
           <p>Please RSVP by January 1st so we can have an accurate count</p>
         </div>
 
-
+        <div className="footer-img">
+          <KksImg />
+        </div>
         </div>
       </div>
       {/* <Link to="/page-2/">Go to page 2</Link> */}
