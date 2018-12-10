@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-// import Header from './header'
+import Footer from './footer/footer';
+import Rsvp from './rsvp/rsvp';
+
 import './layout.scss';
 import 'bootstrap/scss/bootstrap-grid.scss';
 import 'bootstrap/scss/bootstrap-reboot.scss';
-
-import Rsvp from './rsvp/rsvp';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -32,9 +32,10 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Rsvp /> 
+        <Rsvp />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}
+        <Footer />
       </>
     )}
   />
