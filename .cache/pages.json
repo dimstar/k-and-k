@@ -15,13 +15,13 @@
         "path": "/404/"
     },
     {
-        "componentChunkName": "component---cache-dev-404-page-js",
-        "jsonName": "dev-404-page-5f9",
-        "path": "/dev-404-page/"
+        "componentChunkName": "component---src-pages-our-story-js",
+        "jsonName": "our-story-37c",
+        "path": "/our-story/"
     },
     {
-        "componentChunkName": "component---src-pages-page-2-js",
-        "jsonName": "page-2-fbc",
-        "path": "/page-2/"
+        "componentChunkName": "component---src-pages-registry-js",
+        "jsonName": "registry-952",
+        "path": "/registry/"
     }
 ]

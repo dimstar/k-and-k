@@ -1,0 +1,64 @@
+$btn-height: 54px;
+
+.navbar {
+    // background-color: rgba(255, 255, 255, 0) !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    padding: 0 !important;
+}
+
+.navbar-collapse {
+    transition: height 500ms;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+    background-color: #707070;
+    left: 0;
+    top: 0;
+    height: $btn-height;
+    position: absolute;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: white;
+    font-size: 10px;
+    padding: 0 12px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////5ubmueBsSwAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=) !important;
+    
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        background: rgba(255, 255, 255, 0.3) !important;
+        padding-left: 32px !important;
+        height: $btn-height;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+    .navbar-collapse {
+        height: 0 ;
+        display: block !important;
+        overflow:hidden;
+        margin-top: $btn-height;
+        padding: 0;
+        background: white;
+        .nav-item {
+            padding: 10px 18px 0;
+        }
+    }
+    .navbar-collapse.show {
+        height: 180px;
+    }
+}

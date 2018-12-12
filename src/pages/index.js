@@ -2,12 +2,12 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import IndexImg from 'gatsby-image';
 import { Link } from 'gatsby';
-import Rsvp from '../components/rsvp/rsvp';
 
 import Layout from '../components/layout';
 import Hero from '../components/hero/hero';
 
 import bg_brown from '../images/bg-brown.jpg';
+import './index.scss';
 
 class IndexPage extends React.Component {
 
@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
       <StaticQuery
         query={graphql`
           query {
-            placeholderImage: file(relativePath: { eq: "bsm-ceremony.jpg" }) {
+            placeholderImage: file(relativePath: { eq: "bsm-corner-night.jpg" }) {
               childImageSharp {
                 fluid(maxWidth: 1200) {
                   ...GatsbyImageSharpFluid
@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
           height: '100vh',
           overflow: 'hidden'
         }}>
-        <div className="row w-100 p0 m0">
+        <div className="row w-100 p0 m0" style={{margin: 0}}>
           <div className="col-12">
             <Hero />
           </div>
@@ -68,6 +68,10 @@ class IndexPage extends React.Component {
               Please check out our website at kyleandkate.love to RSVP, links to our registry, and hotel group rate information. We are so excited to celebrate with you all on February 2nd!</p>
   
               <p>Please RSVP by January 1st so we can have an accurate count</p>
+
+              <h2>Hotel Information</h2>
+              <p>The Manor is conveniently located between Downtown and Hillcrest, adjacent to the west side of Balboa Park. Guests are encouraged to stay at The Lafayette Hotel, Swim Club & Bungalows at 2223 El Cajon Boulevard. Rates are great this time of year, and if you add the word ‘wedding’ in the promo code box while making your reservation you will receive 15% off your room rate. We also recommend the Kimpton Solamar Hotel in the East Village. Another idea is to get an airbnb, Kyle and I use them whenever we travel, so reach out if you have any questions!</p>
+
             </div>
           </div>
         </div>

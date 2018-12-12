@@ -5,10 +5,11 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Footer from './footer/footer';
 import Rsvp from './rsvp/rsvp';
+import KkNavbar from './nav/kkNav';
 
-import './layout.scss';
-import 'bootstrap/scss/bootstrap-grid.scss';
+import 'bootstrap/scss/bootstrap.scss';
 import 'bootstrap/scss/bootstrap-reboot.scss';
+import './layout.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -32,6 +33,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <KkNavbar />
         <Rsvp />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}

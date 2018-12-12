@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 export default class HTML extends React.Component {
   render() {
@@ -23,7 +23,9 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
           
-          <script src="https://services.cognitoforms.com/s/ySrL_amEAES1jxwusWYkpw"></script>
+          {/* <script src="https://services.cognitoforms.com/s/ySrL_amEAES1jxwusWYkpw"></script> */}
+          <script src="https://services.cognitoforms.com/scripts/embed.js"></script>
+          {/* <script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script> */}
         </body>
       </html>
     )
