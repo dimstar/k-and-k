@@ -2,12 +2,12 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import IndexImg from 'gatsby-image';
 import { Link } from 'gatsby';
-import Rsvp from '../components/rsvp/rsvp';
 
 import Layout from '../components/layout';
 import Hero from '../components/hero/hero';
 
 import bg_brown from '../images/bg-brown.jpg';
+import './index.scss';
 
 class IndexPage extends React.Component {
 
@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
           height: '100vh',
           overflow: 'hidden'
         }}>
-        <div className="row w-100 p0 m0">
+        <div className="row w-100 p0 m0" style={{margin: 0}}>
           <div className="col-12">
             <Hero />
           </div>

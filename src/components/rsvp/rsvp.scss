@@ -2,28 +2,21 @@ $background: #707070;
 
 .rsvp-holder {
     position: fixed;
-    z-index: 100;
     bottom: 100%;
-    overflow: visible;
+    overflow: hidden;
     width: 100%;
     min-height: 89vh;
     height: 100%;
     transition: all 1s;
     background: white;
-    .cognito {
+    padding: 56px 16px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    z-index: 100;
+    iframe {
         opacity: 0;
         visibility: hidden;
         transition: 500ms;
-        padding: 56px 16px;
-        #c-submit-button {
-            font-size: 24px !important;
-            letter-spacing: 1px;
-            margin-bottom: 32px;
-        }
-        .c-forms-form .c-add-item {
-            font-size: 16px;
-            letter-spacing: 1px;
-        }
       }
 }
 
@@ -51,14 +44,11 @@ $background: #707070;
 .down {
     bottom: 0;
     overflow: scroll;
-
-    .cognito {
+    
+    iframe {
       opacity: 1;
       visibility: visible;  
     }
-    // .rsvp-btn {
-    //     transform: translateY(-100%);
-    // }
 }
 
 input[type="color"],
