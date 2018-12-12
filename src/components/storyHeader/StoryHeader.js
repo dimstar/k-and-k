@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
 
-import './footer.scss';
+import './storyHeader.scss';
 
-const KksImg = () => (
+const StoryImage = () => (
     <StaticQuery
         query={graphql`
             query {
-                placeholderImage: file(relativePath: { eq: "bsm-ceremony.jpg" }) {
+                placeholderImage: file(relativePath: { eq: "kate-and-kyle.jpg" }) {
                     childImageSharp {
                         fluid(maxWidth: 1200) {
                             ...GatsbyImageSharpFluid
@@ -21,16 +21,16 @@ const KksImg = () => (
     />
 )
 
-const Footer = () => (
+const StoryHeader = () => (
     <>
-      <div className="footer">
-        <div className="kk-together">
+      <div className="story-header">
+        <div className="image-wrapper">
             <div className="img-aligner">
-                <KksImg />
+                <StoryImage />
             </div>
         </div>
       </div>
     </>
   )
 
-export default Footer;
+export default StoryHeader;

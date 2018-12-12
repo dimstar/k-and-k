@@ -13,11 +13,17 @@ input[type=reset], input[type=submit], button, html [type=button] {
   -webkit-appearance: none !important;
 }
 
-h1, h2, h3 {
+h1, h2, h3,
+h1 a, h2 a, h3 a {
   font-family: baskerville-display-pt, serif;
   letter-spacing: 1px;
   line-height: 1em;
   margin-top: 0;
+}
+
+h1 a, h2 a, h3 a {
+  text-decoration: underline;
+  color: #23202e;
 }
 
 .img-aligner {
