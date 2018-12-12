@@ -4,6 +4,9 @@ var plugins = [{
     },{
       plugin: require('/Users/kylemagee/Documents/webapps/kyleandkate.love/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
+    },{
+      plugin: require('/Users/kylemagee/Documents/webapps/kyleandkate.love/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-128867307-2","head":"false","anonymize":true,"respectDNT":true,"sampleRate":5,"siteSpeedSampleRate":10,"cookieDomain":"kyleandkate.love"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
