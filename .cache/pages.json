@@ -15,6 +15,11 @@
         "path": "/404/"
     },
     {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
         "componentChunkName": "component---src-pages-our-story-js",
         "jsonName": "our-story-37c",
         "path": "/our-story/"

@@ -39,6 +39,7 @@ class IndexPage extends React.Component {
           background: `url( ${bg_brown} )`,
           position: 'relative',
           height: '100vh',
+          maxHeight: '1200px',
           overflow: 'hidden'
         }}>
         <div className="row w-100 p0 m0" style={{margin: 0}}>
@@ -70,7 +71,7 @@ class IndexPage extends React.Component {
               <p>Please RSVP by January 1st so we can have an accurate count</p>
 
               <h2>Hotel Information</h2>
-              <p>The Manor is conveniently located between Downtown and Hillcrest, adjacent to the west side of Balboa Park. Guests are encouraged to stay at The Lafayette Hotel, Swim Club & Bungalows at 2223 El Cajon Boulevard. Rates are great this time of year, and if you add the word ‘wedding’ in the promo code box while making your reservation you will receive 15% off your room rate. We also recommend the Kimpton Solamar Hotel in the East Village. Another idea is to get an airbnb, Kyle and I use them whenever we travel, so reach out if you have any questions!</p>
+              <p>The Manor is conveniently located between Downtown and Hillcrest, adjacent to the west side of Balboa Park. Guests are encouraged to stay at The Lafayette Hotel, Swim Club & Bungalows at 2223 El Cajon Boulevard. Rates are great this time of year, and if you add the word ‘event’ in the promo code box while making your reservation you will receive an awesome discount on your room rate. We also recommend the Kimpton Solamar Hotel in the East Village. Another idea is to get an airbnb, Kyle and I use them whenever we travel, so reach out if you have any questions!</p>
 
             </div>
           </div>
