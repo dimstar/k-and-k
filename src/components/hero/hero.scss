@@ -19,8 +19,8 @@
   position: relative;
   z-index: 2;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -25%);
+  top: 76%;
+  transform: translate(-50%, -50%);
 
   .sub-head {
     margin-top: 1.2em;
@@ -43,9 +43,15 @@
   .kk-wrap {
     max-width: 320px;
     top: 76%;
+
+    svg {
+      max-width: 50vh;
+      margin: 0 auto;
+      display: block;
+    }
   
     .sub-head {
-      margin-top: 4em;
+      margin-top: 2em;
       font-size: 1.4rem;
     }
   }
