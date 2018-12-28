@@ -71,8 +71,7 @@ class IndexPage extends React.Component {
               <p>Please RSVP by January 1st so we can have an accurate count</p>
 
               <h2>Hotel Information</h2>
-              <p>The Manor is conveniently located between Downtown and Hillcrest, adjacent to the west side of Balboa Park. Guests are encouraged to stay at The Lafayette Hotel, Swim Club & Bungalows at 2223 El Cajon Boulevard. Rates are great this time of year, and if you add the word ‘event’ in the promo code box while making your reservation you will receive an awesome discount on your room rate. We also recommend the Kimpton Solamar Hotel in the East Village. Another idea is to get an airbnb, Kyle and I use them whenever we travel, so reach out if you have any questions!</p>
-
+              <p>The Manor is conveniently located between Downtown and Hillcrest, adjacent to the west side of Balboa Park. Guests are encouraged to stay at The Lafayette Hotel, Swim Club &amp; Bungalows at 2223 El Cajon Boulevard, San Diego, CA 92104. To book a room, simply call or email Ariadna Blanco at <a href="tel:6197800367">619.780.0367</a> or <a href="mailto:ariadna@lafayettehotelsd.com">ariadna@lafayettehotelsd.com</a> and mention the Fogarty/Magee wedding for a discounted rate . We also recommend the Kimpton Solamar Hotel in the East Village. Another idea is to get an airbnb, Kyle and I use them whenever we travel, so reach out if you have any questions!</p>
             </div>
           </div>
         </div>
